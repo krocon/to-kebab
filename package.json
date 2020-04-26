@@ -1,0 +1,40 @@
+{
+  "name": "to-kebab",
+  "version": "1.0.0",
+  "description": "Converts any string to kebab case and kebab case to pascal case, camel case and snake case",
+  "scripts": {
+    "test": "jest --findRelatedTests index.js"
+  },
+  "main": "bin/to-kebab",
+  "preferGlobal": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krocon/to-kebab.git"
+  },
+  "keywords": [
+    "kebab case",
+    "pascal case",
+    "snake case",
+    "string conversion"
+  ],
+  "files": [
+    "index.js",
+    "!test"
+  ],
+  "readmeFilename": "README.md",
+  "author": {
+    "name": "Marc Kronberg",
+    "email": "krocon@gmail.com",
+    "url": "https://gui.expert/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/krocon/to-kebab/issues"
+  },
+  "homepage": "https://github.com/krocon/to-kebab#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^25.4.0",
+    "jest-cli": "^25.4.0"
+  }
+}
