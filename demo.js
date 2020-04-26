@@ -34,12 +34,12 @@ const demo = () => {
 
   for (let i = 0; i < inputs.length; i++) {
     const input = inputs[i];
-    console.info('unkownToKebab(' + input + ') -> ' + unknownToKebab(input));
+    console.info('toKebab("' + input + '") -> "' + unknownToKebab(input) + '"');
   }
   console.info();
-  console.info('kebabToCamel (' + kebab + ') -> ' + kebabToCamel(kebab));
-  console.info('kebabToPascal(' + kebab + ') -> ' + kebabToPascal(kebab));
-  console.info('kebabToSnake (' + kebab + ') -> ' + kebabToSnake(kebab));
+  console.info('kebabToCamel ("' + kebab + '") -> "' + kebabToCamel(kebab)+ '"');
+  console.info('kebabToPascal("' + kebab + '") -> "' + kebabToPascal(kebab)+ '"');
+  console.info('kebabToSnake ("' + kebab + '") -> "' + kebabToSnake(kebab)+ '"');
 };
 
 demo();

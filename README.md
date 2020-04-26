@@ -14,39 +14,43 @@ Converts any string to kebab case and kebab case to pascal case, camel case and 
 const {kebabToCamel} = require("to-kebab");
 const {kebabToSnake} = require("to-kebab");
 const {kebabToPascal} = require("to-kebab");
-const {unknownToKebab} = require("to-kebab");
+const {toKebab} = require("to-kebab");
 
-const kebab = unknownToKebab('ersatzKonzept12'); // => ersatz-konzept-12
+const kebab = toKebab('ersatzKonzept12'); // => ersatz-konzept-12
 kebabToPascal(kebab); // => ErsatzKonzept12
+kebabToSnake(kebab); // => ersatz_konzept_12
+kebabToCamel(kebab); // => ersatzKonzept12
 ```
 
 ## Methods
-- unknownToKebab(string): string
+- toKebab(string): string  same as unknownToKebab(string): string 
 - kebabToCamel(string): string
 - kebabToSnake(string): string
 - kebabToPascal(string): string
+- capitalize(string): string
 
-| method        | input string   | output string  | output format |
-|---------------|----------------|----------------|---------------|
-| unkownToKebab | ersatzKonzept  | ersatz-konzept | kebab case    |
-| unkownToKebab | ErsatzKonzept  | ersatz-konzept | kebab case    |
-| unkownToKebab | ersatz-Konzept | ersatz-konzept | kebab case    |
-| unkownToKebab | ersatz-konzept | ersatz-konzept | kebab case    |
-| unkownToKebab | ERSATZ-KONZEPT | ersatz-konzept | kebab case    |
-| unkownToKebab | ersatz_Konzept | ersatz-konzept | kebab case    |
-| unkownToKebab | ersatz_konzept | ersatz-konzept | kebab case    |
-| unkownToKebab | ERSATZ_KONZEPT | ersatz-konzept | kebab case    |
-| unkownToKebab | ersatz Konzept | ersatz-konzept | kebab case    |
-| unkownToKebab | ersatz-KonzeptDialog | ersatz-konzept-dialog | kebab case |
-| unkownToKebab | ersatz_KonzeptDialog | ersatz-konzept-dialog | kebab case |
-| unkownToKebab | ersatzKonzept12  | ersatz-konzept-12 | kebab case   |
-| unkownToKebab | ersatzKonzept-12 | ersatz-konzept-12 | kebab case   |
-| unkownToKebab | ERSATZ-KONZEPT12 | ersatz-konzept-12 | kebab case   |
-| unkownToKebab | ersatzKonzept12  | ersatz-konzept-12 | kebab case   |
-| unkownToKebab | ERSATZ_KONZEPT12 | ersatz-konzept-12 | kebab case   |
-| kebabToCamel  | ersatz-konzept-12 | ersatzKonzept12  | camel case   |
-| kebabToPascal | ersatz-konzept-12 | ErsatzKonzept12  | pascal case  |
-| kebabToSnake  | ersatz-konzept-12 | ersatz_konzept_12 | snake case  |
-
-
+| method        | input string   | output string  | output case |
+|---------------|----------------|----------------|-------------|
+| toKebab | ersatzKonzept  | ersatz-konzept | kebab       |
+| toKebab | ErsatzKonzept  | ersatz-konzept | kebab       |
+| toKebab | ersatz-Konzept | ersatz-konzept | kebab       |
+| toKebab | ersatz-konzept | ersatz-konzept | kebab       |
+| toKebab | ERSATZ-KONZEPT | ersatz-konzept | kebab       |
+| toKebab | ersatz_Konzept | ersatz-konzept | kebab       |
+| toKebab | ersatz_konzept | ersatz-konzept | kebab       |
+| toKebab | ERSATZ_KONZEPT | ersatz-konzept | kebab       |
+| toKebab | ersatz Konzept | ersatz-konzept | kebab       |
+| toKebab | ersatz-KonzeptDialog | ersatz-konzept-dialog | kebab |
+| toKebab | ersatz_KonzeptDialog | ersatz-konzept-dialog | kebab |
+| toKebab | ersatzKonzept12  | ersatz-konzept-12 | kebab  |
+| toKebab | ersatzKonzept-12 | ersatz-konzept-12 | kebab  |
+| toKebab | ERSATZ-KONZEPT12 | ersatz-konzept-12 | kebab  |
+| toKebab | ersatzKonzept12  | ersatz-konzept-12 | kebab  |
+| toKebab | ERSATZ_KONZEPT12 | ersatz-konzept-12 | kebab  |
+| kebabToCamel  | ersatz-konzept-12 | ersatzKonzept12  | camel  |
+| kebabToPascal | ersatz-konzept-12 | ErsatzKonzept12  | pascal |
+| kebabToSnake  | ersatz-konzept-12 | ersatz_konzept_12 | snake |
+| kebabToSnake  | ersatz-konzept-12 | ersatz_konzept_12 | snake |
+| capitalize  | abc | Abc |     |
+| lowerFirst  | ABC | aBC |     |
 

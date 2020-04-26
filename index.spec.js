@@ -1,3 +1,8 @@
+const {toLower} = require("./index");
+const {toUpper} = require("./index");
+const {toLowerCase} = require("./index");
+const {lowerFirst} = require("./index");
+const {capitalize} = require("./index");
 const {kebabToCamel} = require("./index");
 const {kebabToSnake} = require("./index");
 const {kebabToPascal} = require("./index");
@@ -40,5 +45,21 @@ test('kebabToPascal() should do the right thing', async () => {
 
 test('kebabToSnake() should do the right thing', async () => {
   expect(kebabToSnake('ersatz-konzept-12')).toBe('ersatz_konzept_12');
+})
+
+test('capitalize()', async () => {
+  expect(capitalize('abc')).toBe('Abc');
+})
+
+test('lowerFirst()', async () => {
+  expect(lowerFirst('ABC')).toBe('aBC');
+})
+
+test('toUpper()', async () => {
+  expect(toUpper('abc')).toBe('ABC');
+})
+
+test('toLower()', async () => {
+  expect(toLower('ABC')).toBe('abc');
 })
 

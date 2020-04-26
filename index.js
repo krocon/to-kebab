@@ -11,7 +11,13 @@ const lowerFirst = (s) => {
 };
 
 // ABC -> abc
-const toLowerCase = (s) => {
+const toUpper = (s) => {
+  if (typeof s !== 'string') return ''
+  return s.toUpperCase();
+};
+
+// ABC -> abc
+const toLower = (s) => {
   if (typeof s !== 'string') return ''
   return s.toLowerCase();
 };
@@ -53,11 +59,13 @@ const unknownToKebab = (s) => {
 };
 
 
+exports.toKebab = unknownToKebab;
 exports.unknownToKebab = unknownToKebab;
 exports.kebabToCamel = kebabToCamel;
 exports.kebabToPascal = kebabToPascal;
 exports.kebabToSnake = kebabToSnake;
 exports.capitalize = capitalize;
 exports.lowerFirst = lowerFirst;
-exports.toLowerCase = toLowerCase;
+exports.toLower = toLower;
+exports.toUpper = toUpper;
 
