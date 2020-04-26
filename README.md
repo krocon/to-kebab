@@ -28,6 +28,7 @@ kebabToCamel(kebab); // => ersatzKonzept12
 - kebabToSnake(string): string
 - kebabToPascal(string): string
 - capitalize(string): string
+- lowerFirst(string): string
 
 | method        | input string   | output string  | output case |
 |---------------|----------------|----------------|-------------|
@@ -51,6 +52,6 @@ kebabToCamel(kebab); // => ersatzKonzept12
 | kebabToPascal | ersatz-konzept-12 | ErsatzKonzept12  | pascal |
 | kebabToSnake  | ersatz-konzept-12 | ersatz_konzept_12 | snake |
 | kebabToSnake  | ersatz-konzept-12 | ersatz_konzept_12 | snake |
-| capitalize  | abc | Abc |     |
-| lowerFirst  | ABC | aBC |     |
+| capitalize  | abc | Abc |    |
+| lowerFirst  | ABC | aBC |    |
 
