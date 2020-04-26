@@ -1,5 +1,7 @@
 # to-kebab
 
+![Node.js CI](https://github.com/krocon/to-kebab/workflows/Node.js%20CI/badge.svg)
+
 Simple converter for strings.  
 Converts any string to kebab case and kebab case to pascal case, camel case and snake case.
 - kebab-case-2

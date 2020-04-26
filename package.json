@@ -1,6 +1,6 @@
 {
   "name": "to-kebab",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Converts any string to kebab case and kebab case to pascal case, camel case and snake case",
   "scripts": {
     "test": "jest --findRelatedTests index.js --collectCoverage true"
