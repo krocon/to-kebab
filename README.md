@@ -1,6 +1,6 @@
 # to-kebab
 
-![Node.js CI](https://github.com/krocon/to-kebab/workflows/Node.js%20CI/badge.svg)
+![Node.js CI](https://github.com/krocon/to-kebab/workflows/Node.js%20CI/badge.svg) [![Coverage Status](https://coveralls.io/repos/github/krocon/to-kebab/badge.svg?branch=master)](https://coveralls.io/github/krocon/to-kebab?branch=master)
 
 Simple converter for strings.  
 Converts any string to kebab case and kebab case to pascal case, camel case and snake case.
